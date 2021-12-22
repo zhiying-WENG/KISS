@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="css/kiss.css"> 
+
+</head>
+<body>
+    <header class="menu">
+        <img src="image/KISS_logo.png" alt="logo KISS" class="logo">
+        <nav class="nav1">
+            <ul>
+                <li><a href="">Products</a></li>
+                <li class="nav_li_border"><a href="">Solutions</a></li>
+                <li class="nav_li_border"><a href="">Pricing</a></li>
+            </ul>
+        </nav>
+        <nav class="nav2">
+            <ul>
+                <li><a href="sign-in.html">Sign-in</a></li>
+                <li class="nav_li_border"><a href="sign-up.html">Sign-up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main_titre">Jobs</h1>
+        <h2 class="main_titre2">Search<h2>
+        <form class="form_jobs">
+            <div>
+                <label for="team" >Team</label>
+                <select id="team">
+                    <option value="all_team" selected>All teams</option>
+                    <option value="team_engineer">Team Engineering</option>
+                </select>
+            </div>
+            <div>
+                <label for="location" >Location</label>
+                <select id="location">
+                    <option value="all_locations" selected>All locations</option>
+                    <option value="paris">Paris</option>
+                    <option value="londre">Londre</option>
+                    <option value="porto">Porto</option>
+                </select>
+            </div>
+            <div>
+                <label for="publication_date" >Publication date (as of)</label>
+                <input id="publication_date" type="date" value="2021-12-01" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+            </div>  
+        </form>
+        <h2 class="main_titre2">Search result</h2>
+        <h3 class="main_titre3">Team Engineering</h3>
+        <div>
+            <p id="underline">Software engineer - Paris - 2021/12/01</p>
+            <p class="job_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe veritatis molestiae voluptatem dolores quaerat cum tempore, repellendus officiis voluptate nisi a hic asperiores recusandae corrupti ut modi sunt praesentium commodi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe veritatis molestiae voluptatem dolores quaerat cum tempore, repellendus officiis voluptate nisi a hic asperiores recusandae corrupti ut modi sunt praesentium commodi!</p>
+
+            <p id="underline">Software engineer - Londre - 2021/12/02</p>
+            <p class="job_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe veritatis molestiae voluptatem dolores quaerat cum tempore, repellendus officiis voluptate nisi a hic asperiores recusandae corrupti ut modi sunt praesentium commodi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe veritatis molestiae voluptatem dolores quaerat cum tempore, repellendus officiis voluptate nisi a hic asperiores recusandae corrupti ut modi sunt praesentium commodi!</p>
+
+            <p id="underline">Angular/Spring fullstack developer - Porto - 2021/12/04</p>
+            <p class="job_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe veritatis molestiae voluptatem dolores quaerat cum tempore, repellendus officiis voluptate nisi a hic asperiores recusandae corrupti ut modi sunt praesentium commodi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe veritatis molestiae voluptatem dolores quaerat cum tempore, repellendus officiis voluptate nisi a hic asperiores recusandae corrupti ut modi sunt praesentium commodi!</p>
+        </div>
+    </main> 
+    <hr>  
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Products</a>
+                </li>
+                <li>
+                    <a href="" >Solutions</a>
+                </li>
+                <li>
+                    <a href="">Pricing</a>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="about-us.html">About us</a>
+                </li>
+                <li>
+                    <a href="jobs.html">Jobs</a>
+                </li>
+            </ul>
+        </nav>
+        <p>(c) 2021 - Simplon</p>        
+    </footer>
+</body>
+</html>

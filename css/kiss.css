@@ -1,0 +1,275 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: light 300;
+    color:black;
+    font-size: 1.2vw;
+    padding: 0 10vw;
+}
+@media (max-width: 800px) {
+    body{
+        padding: 0;
+        font-size: 2vw;
+    }
+}
+a{
+    color:black;
+}
+a:hover{
+    color: red;
+    /* cursor: pointer; */
+ }
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2vw;
+    padding: 0 3.5%;
+}
+header ul{
+    align-self: flex-start;
+}
+header .logo{
+    width:10%;
+}
+header .nav1{
+    align-self: flex-start;
+}
+header .nav1 ul{
+    display: flex;
+    justify-content: flex-start;
+}
+header .nav1 ul li, .nav2 ul li{
+    padding: 0 5% ;
+    width: 5.3vw; 
+}
+
+header .nav_li_border{
+    border-left: 1px solid black ;
+}
+header .nav2{
+    align-self: flex-end;
+    margin-left: auto;
+}
+header .nav2 ul{
+    display: flex;
+    justify-content: flex-end;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding:0 3.5% 0 3.5%;
+}
+main h1,h2,h3{
+    font-weight:  normal;
+}
+main h1{
+    align-self: flex-start;
+    font-weight:  medium 500;
+    font-size: 4vw;
+    margin:2% 0;
+}
+main h2{
+    font-size: 2.5vw;
+    margin:1% 0 0 0;
+}
+main h3{
+    font-size: 2vw;
+}
+main form{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    padding:2% 0 5% 0;
+    font-weight: medium 500;
+    font-size: 1.2vw;
+}
+main form input{
+    margin-bottom: 5%;
+    width:40vw;
+    height: 2vw;
+    border:2px solid black;
+    border-radius: 2px;
+}
+main form .sign_in_button,.sign_up_button{
+    width:40.5vw;
+    height: 2vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border:2px solid black;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px black;
+    font-size: 1.2vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: medium 500; 
+}
+main form .accept_term{
+    display: flex;
+}
+main form .accept_term input{
+    width:auto;
+    height:auto;
+    margin-right: 2%;
+}
+@media (max-width: 800px) {
+    header{
+        font-size: 2vw;
+    }
+    header .nav1 ul li, .nav2 ul li{
+        width:10vw;
+    }
+    main form{
+        font-size: 2vw;
+    }
+    main form input{
+        width:78vw;
+        height:4vw;
+    }
+    main form .sign_in_button, .sign_up_button{
+        width:79vw;
+        height:4vw;
+        font-size: 2vw;
+    }
+}
+
+main form #label_checkbox{
+    text-decoration: underline;
+}
+/* about-as */
+main .team,.workplace{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 2% 0 5% 0;
+}
+main img{
+    width: 20vw;    
+}
+main p{
+    width:50vw;
+    font-size: 1.2vw;
+    font-weight: light 300;
+    margin-top: 0;
+}
+@media (max-width: 800px) {
+    main .workplace{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin: 2% 0 5% 0;
+    }
+    main img{
+        width: 85vw;    
+    }
+    main p{
+        width:85vw;
+        font-size: 2vw;
+        margin-top: 5%;
+    }
+}
+/* jobs */
+main .form_jobs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin:1% 0 2% 0;
+    padding: 0;
+}
+main .form_jobs div{
+    display: flex;
+    flex-direction: column;
+}
+main .form_jobs label, select, #publication_date{
+    width: 22vw;
+    font-size: 1.1vw;
+}
+main .form_jobs label, #publication_date{
+    height: 1.8vw;
+}
+main .form_jobs select{
+    height: 2vw;
+    border: 2px solid black;
+}
+main .job_p{
+    font-size: 1vw;
+    width:auto;
+    margin-bottom: 3%;
+}
+main #underline{
+    text-decoration: underline;
+    font-size: 1.2vw;
+}
+@media (max-width: 800px) {
+    main .form_jobs label, select, #publication_date{
+        font-size: 2vw;
+    }
+    main .form_jobs label, select{
+        width: 90vw;
+    }
+    main .form_jobs label{
+        height: 3vw;
+    }
+    main .form_jobs select{
+        height: 4vw;
+        margin-bottom: 2%;
+    }
+    main .form_jobs #publication_date{
+        height: 3vw;
+        width: 30vw;
+    }
+    main h1{
+        font-size: 5vw;
+    }
+    main h2{
+        font-size: 3.5vw;
+    }
+    main h3{
+        font-size: 3vw;
+    }
+    main .job_p{
+        font-size: 2vw;
+        width:auto;
+    }
+    main #underline{
+        text-decoration: underline;
+        font-size: 2.5vw;
+    }
+}
+
+hr{
+    margin: 0 3.5%;
+    height: 2px;
+    border:none;
+    background-color: black;
+}
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-left:3.5%; 
+}
+footer nav{
+    width:13%;
+}
+footer nav ul{
+    display: flex;
+    flex-flow: column nowrap;
+    padding:0;
+    text-align: left;
+}
+footer nav ul li{
+    margin:9% 0; 
+}
+footer p{
+    align-self:flex-end;
+    width:100%;
+    text-align: center;
+    color:red;
+}
+@media (max-width:800px) {
+    footer nav{
+        width:16.5%;
+    }
+}
