@@ -4,11 +4,11 @@ body{
     font-weight: light 300;
     color:black;
     font-size: 1.2vw;
-    padding: 0 10vw;
+    padding: 0 15vw;
 }
 @media (max-width: 800px) {
     body{
-        padding: 0;
+        padding: 5vw;
         font-size: 2vw;
     }
 }
@@ -24,7 +24,6 @@ header{
     flex-direction: row;
     align-items: center;
     font-size: 1.2vw;
-    padding: 0 3.5%;
 }
 header ul{
     align-self: flex-start;
@@ -62,7 +61,6 @@ ul{
 main{
     display: flex;
     flex-direction: column;
-    padding:0 3.5% 0 3.5%;
 }
 main h1,h2,h3{
     font-weight:  normal;
@@ -150,7 +148,7 @@ main img{
     width: 20vw;    
 }
 main p{
-    width:50vw;
+    width:45vw;
     font-size: 1.2vw;
     font-weight: light 300;
     margin-top: 0;
@@ -183,7 +181,7 @@ main .form_jobs div{
     flex-direction: column;
 }
 main .form_jobs label, select, #publication_date{
-    width: 22vw;
+    width: 21vw;
     font-size: 1.1vw;
 }
 main .form_jobs label, #publication_date{
@@ -207,7 +205,7 @@ main #underline{
         font-size: 2vw;
     }
     main .form_jobs label, select{
-        width: 90vw;
+        width: 85vw;
     }
     main .form_jobs label{
         height: 3vw;
@@ -238,16 +236,14 @@ main #underline{
 }
 
 hr{
-    margin: 0 3.5%;
     height: 2px;
     border:none;
-    background-color: red;
+    background-color:red;
 }
 footer{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    margin-left:3.5%; 
 }
 footer nav{
     width:13%;
