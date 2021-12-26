@@ -86,7 +86,6 @@ main form{
     flex-direction: column;
     align-self: center;
     padding:2% 0 5% 0;
-    /* font-weight: 500; */
     font-size: 1.2vw;
 }
 main form input{
@@ -159,8 +158,6 @@ main p{
 @media (max-width: 800px) {
     main .workplace{
         flex-direction: column-reverse;
-        justify-content: space-between;
-        margin: 2% 0 5% 0;
     }
     main img{
         width: 85vw;    
