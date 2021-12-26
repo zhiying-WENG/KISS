@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 body{
     font-family: 'Roboto', sans-serif;
-    font-weight: light 300;
+    font-weight: 300;
     color:black;
     font-size: 1.2vw;
     padding: 0 15vw;
@@ -62,12 +62,11 @@ main{
     display: flex;
     flex-direction: column;
 }
-main h1,h2,h3{
-    font-weight:  normal;
+main h1,h2,h3,h4,label{
+    font-weight: 500;
 }
 main h1{
     align-self: flex-start;
-    font-weight:  medium 500;
     font-size: 4vw;
     margin:2% 0;
 }
@@ -78,12 +77,16 @@ main h2{
 main h3{
     font-size: 2vw;
 }
+main h4{
+    font-size: 1.5vw;
+    margin: 0;
+}
 main form{
     display:flex;
     flex-direction: column;
     align-self: center;
     padding:2% 0 5% 0;
-    font-weight: medium 500;
+    /* font-weight: 500; */
     font-size: 1.2vw;
 }
 main form input{
@@ -103,7 +106,7 @@ main form .sign_in_button,.sign_up_button{
     box-shadow: 5px 5px 5px black;
     font-size: 1.2vw;
     font-family: 'Roboto', sans-serif;
-    font-weight: medium 500; 
+    font-weight: 500; 
 }
 main form .accept_term{
     display: flex;
@@ -150,7 +153,7 @@ main img{
 main p{
     width:45vw;
     font-size: 1.2vw;
-    font-weight: light 300;
+    font-weight: 300;
     margin-top: 0;
 }
 @media (max-width: 800px) {
@@ -194,11 +197,7 @@ main .form_jobs select{
 main .job_p{
     font-size: 1vw;
     width:auto;
-    margin-bottom: 3%;
-}
-main #underline{
-    text-decoration: underline;
-    font-size: 1.2vw;
+    margin:1% 0 3% 0;
 }
 @media (max-width: 800px) {
     main .form_jobs label, select, #publication_date{
@@ -227,11 +226,11 @@ main #underline{
     main h3{
         font-size: 3vw;
     }
+    main h4{
+        font-size: 2.5vw;
+    }
     main .job_p{
         font-size: 2vw;
-    }
-    main #underline{
-        font-size: 2.5vw;
     }
 }
 
