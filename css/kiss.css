@@ -160,29 +160,29 @@ main .job_p{
     justify-content: space-between;
     margin-top: 1%;
 }
-.pricing_plans_blocks{
+.pricing_plans div div{
     display: flex;
     flex-direction: column; 
     width:27%;
     padding: 2% 2% 1% 2%;
     border: 2px solid black;
 }
-.pricing_plans_blocks p{
+.pricing_plans div div p{
     font-size: 4vw;
     font-weight: 500;
     margin:0;
 }
-.pricing_plans_blocks ul{
+.pricing_plans ul{
     margin-top: 1%;
     padding-left: 2%;
     width: 43%;
     border: 2px solid black;
 }
-.pricing_plans_blocks ul li{
+.pricing_plans ul li{
     margin: 5%;
     text-align: left;
 }
-.pricing_plans_blocks button{
+.pricing_plans button{
     margin-top: auto;
     align-self: center;
     border:2px solid black;
@@ -317,11 +317,11 @@ footer p{
     .pricing_plans div{
         flex-wrap: wrap;
     }
-    .pricing_plans_blocks{
+    .pricing_plans div div{
         width:95%;
         margin-bottom: 1%;
     }
-    .pricing_plans_blocks ul{
+    .pricing_plans ul{
         width: 20%;
     }
     footer nav{
