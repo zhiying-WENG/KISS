@@ -4,13 +4,7 @@ body{
     font-weight: 300;
     color:black;
     font-size: 1.2vw;
-    padding: 0 15vw;
-}
-@media (max-width: 800px) {
-    body{
-        padding: 5vw;
-        font-size: 2vw;
-    }
+    margin: 0 15vw;
 }
 a{
     color:black;
@@ -21,7 +15,6 @@ a:hover{
  }
 header{
     display: flex;
-    flex-direction: row;
     align-items: center;
     font-size: 1.2vw;
 }
@@ -29,28 +22,27 @@ header ul{
     align-self: flex-start;
 }
 header .logo{
-    width:10%;
+    width:8vw;
 }
-header .nav1{
+header .nav_left{
     align-self: flex-start;
 }
-header .nav1 ul{
+header .nav_left ul{
     display: flex;
     justify-content: flex-start;
 }
-header .nav1 ul li, .nav2 ul li{
+header ul li{
     padding: 0 5% ;
     width: 5.3vw; 
 }
-
 header .nav_li_border{
     border-left: 1px solid black ;
 }
-header .nav2{
+header .nav_right{
     align-self: flex-end;
     margin-left: auto;
 }
-header .nav2 ul{
+header .nav_right ul{
     display: flex;
     justify-content: flex-end;
 }
@@ -115,27 +107,6 @@ main form .accept_term input{
     height:auto;
     margin-right: 2%;
 }
-@media (max-width: 800px) {
-    header{
-        font-size: 2vw;
-    }
-    header .nav1 ul li, .nav2 ul li{
-        width:10vw;
-    }
-    main form{
-        font-size: 2vw;
-    }
-    main form input{
-        width:78vw;
-        height:4vw;
-    }
-    main form .sign_in_button, .sign_up_button{
-        width:79vw;
-        height:4vw;
-        font-size: 2vw;
-    }
-}
-
 main form #label_checkbox{
     text-decoration: underline;
 }
@@ -154,19 +125,6 @@ main p{
     font-size: 1.2vw;
     font-weight: 300;
     margin-top: 0;
-}
-@media (max-width: 800px) {
-    main .workplace{
-        flex-direction: column-reverse;
-    }
-    main img{
-        width: 85vw;    
-    }
-    main p{
-        width:85vw;
-        font-size: 2vw;
-        margin-top: 5%;
-    }
 }
 /* jobs */
 main .form_jobs{
@@ -196,7 +154,134 @@ main .job_p{
     width:auto;
     margin:1% 0 3% 0;
 }
-@media (max-width: 800px) {
+/* pricing */
+.pricing_plans div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+.pricing_plans_blocks{
+    display: flex;
+    flex-direction: column; 
+    width:27%;
+    padding: 2% 2% 1% 2%;
+    border: 2px solid black;
+}
+.pricing_plans_blocks p{
+    font-size: 4vw;
+    font-weight: 500;
+    margin:0;
+}
+.pricing_plans_blocks ul{
+    margin-top: 1%;
+    padding-left: 2%;
+    width: 43%;
+    border: 2px solid black;
+}
+.pricing_plans_blocks ul li{
+    margin: 5%;
+    text-align: left;
+}
+.pricing_plans_blocks button{
+    margin-top: auto;
+    align-self: center;
+    border:2px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.pricing_feature{
+    margin-top: 2%;
+}
+.pricing_feature table{
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.pricing_feature thead tr {
+    background-color:rgb(207, 204, 204);
+  }
+.pricing_feature table td, th{
+    max-width: 10vw;
+    padding-right: 1vw;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+.pricing_feature  tbody tr:nth-of-type(2n + 1) {
+    background-color: rgb(240, 239, 239);
+}
+.pricing_feature thead th:nth-of-type(4n + 1),tbody td:nth-of-type(4n + 1) {
+    padding-left: 1%;
+    width:80%;
+    text-align: left;
+}
+.pricing_feature table input{
+    margin: 1vw 0;
+    padding: 0;
+    width:5vw;
+    height: 1.2vw;
+}
+  
+hr{
+    height: 2px;
+    border:none;
+    background-color:red;
+}
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+footer nav{
+    width:13%;
+}
+footer nav ul{
+    display: flex;
+    flex-flow: column nowrap;
+    padding:0;
+    text-align: left;
+}
+footer nav ul li{
+    margin:9% 0; 
+}
+footer p{
+    align-self:flex-end;
+    width:100%;
+    text-align: center;
+}
+@media (max-width:800px) {
+    body{
+        margin: 5vw;
+        font-size: 2vw;
+    }
+    header{
+        font-size: 2vw;
+    }
+    header ul li{
+        width:10vw;
+    }
+    main form{
+        font-size: 2vw;
+    }
+    main form input{
+        width:78vw;
+        height:4vw;
+    }
+    main form .sign_in_button, .sign_up_button{
+        width:79vw;
+        height:4vw;
+        font-size: 2vw;
+    }
+    main .workplace{
+        flex-direction: column-reverse;
+    }
+    main img{
+        width: 85vw;    
+    }
+    main p{
+        width:85vw;
+        font-size: 2vw;
+        margin-top: 5%;
+    }
     main .form_jobs label, select, #publication_date{
         font-size: 2vw;
     }
@@ -229,36 +314,16 @@ main .job_p{
     main .job_p{
         font-size: 2vw;
     }
-}
-
-hr{
-    height: 2px;
-    border:none;
-    background-color:red;
-}
-footer{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-}
-footer nav{
-    width:13%;
-}
-footer nav ul{
-    display: flex;
-    flex-flow: column nowrap;
-    padding:0;
-    text-align: left;
-}
-footer nav ul li{
-    margin:9% 0; 
-}
-footer p{
-    align-self:flex-end;
-    width:100%;
-    text-align: center;
-}
-@media (max-width:800px) {
+    .pricing_plans div{
+        flex-wrap: wrap;
+    }
+    .pricing_plans_blocks{
+        width:95%;
+        margin-bottom: 1%;
+    }
+    .pricing_plans_blocks ul{
+        width: 20%;
+    }
     footer nav{
         width:16.5%;
     }
