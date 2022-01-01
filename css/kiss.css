@@ -130,6 +130,7 @@ main p{
 main .form_jobs{
     display: flex;
     flex-flow: row wrap;
+    align-self: auto;
     justify-content: space-between;
     margin:1% 0 2% 0;
     padding: 0;
