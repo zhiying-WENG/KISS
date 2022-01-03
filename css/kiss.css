@@ -201,7 +201,7 @@ main .job_p{
 .pricing_feature thead tr {
     background-color:rgb(207, 204, 204);
   }
-.pricing_feature table td, th{
+.pricing_feature table th, td{
     max-width: 10vw;
     padding-right: 1vw;
     border-bottom: 1px solid #000;
@@ -320,7 +320,7 @@ footer p{
     }
     .pricing_plans div article{
         width:95%;
-        margin-bottom: 1%;
+        margin-bottom: 3%;
     }
     .pricing_plans ul{
         width: 20%;
